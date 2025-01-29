@@ -1,9 +1,9 @@
 # ClusterProtocol
-< br / >
+
 # BTC Price Prediction API
+
 🚀 A Machine Learning-powered API to predict the next day's closing price of Bitcoin (BTC) based on historical price data.
-< br / >
-< br / >
+
 # 📌 Project Overview
 This project leverages Regression and Deep Learning models to predict Bitcoin's closing price using historical data. The trained models are deployed as a REST API using Flask, allowing users to make real-time predictions.
 
@@ -27,21 +27,21 @@ BTC-Price-Prediction/
 # 🚀 Steps to Run the Project
 1️⃣ Install Dependencies
 Ensure Python 3.8+ is installed, then install required packages:
-*Command*: pip install -r requirements.txt
+*Command*: ```pip install -r requirements.txt```
 
 2️⃣ Download and Preprocess Data
 Run the following script to fetch Bitcoin data and preprocess it:
-*Command*: python btc_price_prediction.py
+*Command*: ```python btc_price_prediction.py```
 This will generate the preprocessed dataset inside the data/ directory.
 
 3️⃣ Train Models
 To train all models and save them:
-*Command*: python btc_price_prediction.py
+*Command*: ```python btc_price_prediction.py```
 Trained models will be stored inside the model/ directory.
 
 4️⃣ Run the Flask API 
 Start the Flask API server:
-*Command*: python btc_price_prediction.py
+*Command*: ```python btc_price_prediction.py```
 Once running, the API will be available at:
 http://127.0.0.1:5000/
 
@@ -52,9 +52,11 @@ http://127.0.0.1:5000/
 Endpoint: /
 Method: GET
 Response:
+```
 {
     "message": "BTC Price Prediction API is running. Use /predict endpoint for predictions."
 }
+```
 📌 2. Make a Prediction
 =
 Endpoint: /predict
@@ -62,9 +64,7 @@ Method: POST
 Content-Type: application/json
 Request Body Example:
 
-json
-Copy
-Edit
+```
 {
     "Open": 1,
     "High": 2,
@@ -77,17 +77,17 @@ Edit
     "30-day Volatility": 0.2,
     "RSI": 50
 }
+```
 Response Example:
 
-json
-Copy
-Edit
+```
 {
     "Linear Regression Prediction": 45000.5,
     "Random Forest Prediction": 45200.8,
     "XGBoost Prediction": 45120.7,
     "LSTM Prediction": "LSTM model not available"
 }
+```
 Error Handling:
 
 If required fields are missing, API returns a 400 error.
