@@ -126,4 +126,4 @@ Designed the API to return predictions from all trained models.
 # 👨‍💻 Author & Contribution
 ✉️ If you have any suggestions or feedback, feel free to contribute or contact me!
 
-🔗 GitHub Repo: [Insert your GitHub Repository Link]
+🔗 GitHub Repo: https://github.com/AnmolBennett/ClusterProtocol.git
