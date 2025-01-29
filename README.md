@@ -1,15 +1,21 @@
 # ClusterProtocol
 
+
+
 # BTC Price Prediction API
 🚀 A Machine Learning-powered API to predict the next day's closing price of Bitcoin (BTC) based on historical price data.
+
+
 
 
 # 📌 Project Overview
 This project leverages Regression and Deep Learning models to predict Bitcoin's closing price using historical data. The trained models are deployed as a REST API using Flask, allowing users to make real-time predictions.
 
 
+
+
 # 📂 Project Structure
-'''
+```
 BTC-Price-Prediction/
 │── data/               # Contains raw and preprocessed datasets
 │── model/              # Trained models (Linear Regression, Random Forest, XGBoost, LSTM)
@@ -17,7 +23,9 @@ BTC-Price-Prediction/
 │── requirements.txt    # Python dependencies
 │── README.md           # Documentation
 │── btc_price_prediction.py  # Main script for training & API deployment
-'''
+```
+
+
 
 
 # 🚀 Steps to Run the Project
